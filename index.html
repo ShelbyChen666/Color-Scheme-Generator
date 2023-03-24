@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Color Scheme</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <h1 class="title">Inspiration!</h1>
+        </div>
+        <div class="choice">
+            <input type="color" id="seed-color" aria-label="Select a seed color"/>
+            <select id="mode" class="border" aria-label="Select a color mode">
+                <option value=monochrome>Monochrome</option>
+                <option value=monochrome-dark>Monochrome-dark</option>
+                <option value=monochrome-light>Monochrome-light</option>
+                <option value=analogic>Analogic</option>
+                <option value=complement>Complement</option>
+                <option value=analogic-complement>Analogic-complement</option>
+                <option value=triad>Triad</option>
+                <option value=quad>Quad</option>
+            </select>
+            <button id="get-scheme" class="border">Get Color Scheme</button>
+        </div>
+        <div id="color-scheme">
+        </div>
+        <div id="color-text">
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

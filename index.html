@@ -8,30 +8,35 @@
         <link rel="stylesheet" href="index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div>
-            <h1 class="title">Inspiration!</h1>
-        </div>
-        <div class="choice">
-            <input type="color" id="seed-color" aria-label="Select a seed color"/>
-            <select id="mode" class="border" aria-label="Select a color mode">
-                <option value=monochrome>Monochrome</option>
-                <option value=monochrome-dark>Monochrome-dark</option>
-                <option value=monochrome-light>Monochrome-light</option>
-                <option value=analogic>Analogic</option>
-                <option value=complement>Complement</option>
-                <option value=analogic-complement>Analogic-complement</option>
-                <option value=triad>Triad</option>
-                <option value=quad>Quad</option>
-            </select>
-            <button id="get-scheme" class="border">Get Color Scheme</button>
-        </div>
-        <div id="color-scheme">
-        </div>
-        <div id="color-text">
-        </div>
+        <main>
+            <div>
+                <h1 class="title">Color Inspiration</h1>
+            </div>
+            <div class="choice">
+                <input type="color" id="seed-color" aria-label="Select a seed color"/>
+                <select id="mode" class="border" aria-label="Select a color mode">
+                    <option value=monochrome>Monochrome</option>
+                    <option value=monochrome-dark>Monochrome-dark</option>
+                    <option value=monochrome-light>Monochrome-light</option>
+                    <option value=analogic>Analogic</option>
+                    <option value=complement>Complement</option>
+                    <option value=analogic-complement>Analogic-complement</option>
+                    <option value=triad>Triad</option>
+                    <option value=quad>Quad</option>
+                </select>
+                <button id="get-scheme" class="border">Get Color Scheme</button>
+            </div>
+            <div class="color-container">
+                <div id="color-scheme">
+                </div>
+                <div id="color-text">
+                </div>
+            </div>
+
+        </main>
         <script src="index.js"></script>
     </body>
 </html>

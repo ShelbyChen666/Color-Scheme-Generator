@@ -1,18 +1,28 @@
-html, body {
+* {
+    box-sizing: border-box;
+}
+
+
+body {
     margin: auto;
     padding: 0;
     max-width: 800px;
     text-align: center;
     box-sizing: border-box;
+    background-image: url(./colorful.png);
+    background-size: cover;
+    background-color: black;
 }
-
+  
 /* Typography */
 .title{
-    font-family: 'Pacifico', cursive, sans-serif;
-    font-size: clamp(2rem, 7vw, 60px);
-    margin: 0.5em;
-    text-shadow: 2px 2px grey;
-}
+    font-family: 'Alkatra', cursive, sans-serif;
+    font-size: clamp(2rem, 8vw, 60px);
+    margin-bottom: 0;
+    color: whitesmoke;
+    text-shadow: 3px 3px 2px grey;
+
+} 
 
 .hex-code {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -20,10 +30,10 @@ html, body {
 
 /* Layout */
 .choice {
-    display: grid;
-    grid-template-columns: 1fr 2fr minmax(180px,1.5fr);
-    gap: 1em;
-    padding: 1em 2em;
+    display: flex;
+    padding: 30px;
+    gap: 10px;
+    justify-content: space-around;
 }
 
 #seed-color {
@@ -45,9 +55,25 @@ html, body {
     width: auto;
 }
 
+#seed-color:hover, #seed-color:active, #seed-color:focus,
+.border:hover, .border:active, .border:focus {
+    text-shadow: 2px 2px 2px grey;
+    box-shadow: 3px 3px 2px #5e5c5c;
+}
+
+.color-container {
+    margin: auto;
+    padding-inline: 30px;
+}
+
 #color-scheme,#color-text {
     display: grid;
     grid-template-columns: repeat(5,minmax(70px,1fr));
+    color: whitesmoke;
+}
+
+#color-scheme {
+    box-shadow: 0 0 8px gray;
 }
 
 .color-box {
@@ -55,5 +81,5 @@ html, body {
 }
 
 #color-text {
-    margin-top: 0.8em;
+    padding-block: 1em;
 }
